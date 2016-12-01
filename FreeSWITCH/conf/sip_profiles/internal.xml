@@ -131,6 +131,8 @@
         and create this localnet.auto ACL for this.
     -->
     <param name="local-network-acl" value="localnet.auto"/>
+	
+	<param name="apply-candidate-acl" value="domains" />
     <!--<param name="apply-register-acl" value="domains"/>-->
     <!--<param name="dtmf-type" value="info"/>-->
 
@@ -182,11 +184,11 @@
     <!--<param name="bind-params" value="transport=udp"/>-->
     <!--<param name="unregister-on-options-fail" value="true"/>-->
     <!-- Send an OPTIONS packet to all registered endpoints -->
-    <!--<param name="all-reg-options-ping" value="true"/>-->
+    <param name="all-reg-options-ping" value="true"/>
     <!-- Send an OPTIONS packet to NATed registered endpoints. Can be 'true' or 'udp-only'. -->
     <!--<param name="nat-options-ping" value="true"/>-->
     <!--<param name="sip-options-respond-503-on-busy" value="true"/>-->
-    <!--<param name="sip-messages-respond-200-ok" value="true"/>-->
+    <param name="sip-messages-respond-200-ok" value="true"/>
     <!--<param name="sip-subscribe-respond-200-ok" value="true"/>-->
 
     <!-- TLS: disabled by default, set to "true" to enable -->
@@ -205,7 +207,7 @@
     <param name="tls-verify-date" value="true"/>
     <!-- TLS verify policy, when registering/inviting gateways with other servers (outbound) or handling inbound registration/invite requests how should we verify their certificate -->
     <!-- set to 'in' to only verify incoming connections, 'out' to only verify outgoing connections, 'all' to verify all connections, also 'subjects_in', 'subjects_out' and 'subjects_all' for subject validation. Multiple policies can be split with a '|' pipe -->
-    <param name="tls-verify-policy" value="none"/>
+    <!-- <param name="tls-verify-policy" value="none"/> -->
     <!-- Certificate max verify depth to use for validating peer TLS certificates when the verify policy is not none -->
     <param name="tls-verify-depth" value="2"/>
     <!-- If the tls-verify-policy is set to subjects_all or subjects_in this sets which subjects are allowed, multiple subjects can be split with a '|' pipe -->
@@ -232,8 +234,8 @@
     <!--Uncomment to set all inbound calls to no media mode-->
     <!--<param name="inbound-bypass-media" value="true"/>-->
 
-    <!--Uncomment to set all inbound calls to proxy media mode-->
-    <!--<param name="inbound-proxy-media" value="true"/>-->
+    <!--Uncomment to set all inbound calls to proxy media mode YT_DEBUG-->
+    <param name="inbound-proxy-media" value="false"/>
 
     <!-- Let calls hit the dialplan before selecting codec for the a-leg -->
     <param name="inbound-late-negotiation" value="true"/>

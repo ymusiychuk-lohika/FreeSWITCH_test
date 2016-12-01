@@ -12,7 +12,7 @@
        
        WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING 
   -->
-  <X-PRE-PROCESS cmd="set" data="default_password=1234"/>
+  <X-PRE-PROCESS cmd="set" data="default_password=1111"/>
   <!-- Did you change it yet? -->
   <!--
       The following variables are set dynamically - calculated if possible by freeswitch - and 
@@ -68,7 +68,7 @@
       
       http://wiki.freeswitch.org/wiki/ZRTP (on how to enable zrtp)
   -->
-  <X-PRE-PROCESS cmd="set" data="zrtp_secure_media=true"/>
+  <X-PRE-PROCESS cmd="set" data="zrtp_secure_media=false"/>
   <!--
       NOTICE: When using SRTP it's critical that you do not offer or accept
       variable bit rate codecs, doing so would leak information and possibly
@@ -255,8 +255,9 @@
        127 - BV32
 
   -->
-  <X-PRE-PROCESS cmd="set" data="global_codec_prefs=G7221 at 32000h,G7221 at 16000h,G722,PCMU,PCMA,GSM,H263,H264,H263-1998,H263-2000"/>
-  <X-PRE-PROCESS cmd="set" data="outbound_codec_prefs=PCMU,PCMA,GSM,H263,H264,H263-1998,H263-2000"/>
+  <X-PRE-PROCESS cmd="set" data="global_codec_prefs=G7221 at 32000h,G7221 at 16000h,G722,PCMU,PCMA,GSM,H263,H264,H263-1998,H263-2000,VP8"/>
+  <X-PRE-PROCESS cmd="set" data="outbound_codec_prefs=PCMU,PCMA,GSM,H263,H264,H263-1998,H263-2000,VP8"/>
+
 
   <!--
       xmpp_client_profile and xmpp_server_profile
@@ -297,7 +298,7 @@
        If unspecified, the bind_server_ip value is used.
        Used by: sofia.conf.xml dingaling.conf.xml
   -->
-  <X-PRE-PROCESS cmd="set" data="external_rtp_ip=stun:stun.freeswitch.org"/>
+  <X-PRE-PROCESS cmd="set" data="external_rtp_ip=stun:$${local_ip_v4}"/>
 
   <!-- external_sip_ip
       Used as the public IP address for SDP.
@@ -310,12 +311,12 @@
        If unspecified, the bind_server_ip value is used.
        Used by: sofia.conf.xml dingaling.conf.xml
   -->
-  <X-PRE-PROCESS cmd="set" data="external_sip_ip=stun:stun.freeswitch.org"/>
+  <X-PRE-PROCESS cmd="set" data="external_sip_ip=$${local_ip_v4}"/>
 
   <!-- unroll-loops
        Used to turn on sip loopback unrolling.
   --> 
-  <X-PRE-PROCESS cmd="set" data="unroll_loops=true"/>
+  <X-PRE-PROCESS cmd="set" data="unroll_loops=false"/>
 
   <!-- outbound_caller_id and outbound_caller_name
        The caller ID telephone number we should use when calling out.
@@ -420,13 +421,13 @@
   <X-PRE-PROCESS cmd="set" data="internal_auth_calls=true"/>
   <X-PRE-PROCESS cmd="set" data="internal_sip_port=5060"/>
   <X-PRE-PROCESS cmd="set" data="internal_tls_port=5061"/>
-  <X-PRE-PROCESS cmd="set" data="internal_ssl_enable=false"/>
+  <X-PRE-PROCESS cmd="set" data="internal_ssl_enable=true"/>
 
   <!-- External SIP Profile -->
   <X-PRE-PROCESS cmd="set" data="external_auth_calls=false"/>
   <X-PRE-PROCESS cmd="set" data="external_sip_port=5080"/>
   <X-PRE-PROCESS cmd="set" data="external_tls_port=5081"/>
-  <X-PRE-PROCESS cmd="set" data="external_ssl_enable=false"/>
+  <X-PRE-PROCESS cmd="set" data="external_ssl_enable=true"/>
 
   <!-- Video Settings -->
   <!-- Setting the max bandwdith -->

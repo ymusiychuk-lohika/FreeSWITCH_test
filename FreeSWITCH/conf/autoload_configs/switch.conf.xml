@@ -126,7 +126,7 @@
     <param name="dump-cores" value="yes"/>
 
     <!-- Enable verbose channel events to include every detail about a channel on every event  -->
-    <!-- <param name="verbose-channel-events" value="no"/> -->
+    <param name="verbose-channel-events" value="yes"/>
 
     <!-- Enable clock nanosleep -->
     <!-- <param name="enable-clock-nanosleep" value="true"/> -->
@@ -144,11 +144,11 @@
     <!-- NEEDS DOCUMENTATION -->
 
     <!-- RTP port range -->
-    <!-- <param name="rtp-start-port" value="16384"/> -->
-    <!-- <param name="rtp-end-port" value="32768"/> -->
+    <param name="rtp-start-port" value="5000"/>
+    <param name="rtp-end-port" value="6000"/>
 
     <!-- Test each port to make sure it is not in use by some other process before allocating it to RTP -->
-    <!-- <param name="rtp-port-usage-robustness" value="true"/> -->
+    <param name="rtp-port-usage-robustness" value="true"/>
 
     <param name="rtp-enable-zrtp" value="false"/>
 
@@ -174,7 +174,7 @@
     <!-- <param name="core-dbtype" value="MSSQL"/> -->
 
     <!-- Allow multiple registrations to the same account in the central registration table -->
-    <!-- <param name="multiple-registrations" value="true"/> -->
+    <param name="multiple-registrations" value="true"/>
 
   </settings>
 

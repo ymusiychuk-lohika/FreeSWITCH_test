@@ -16,4 +16,9 @@
     <X-PRE-PROCESS cmd="include" data="../sip_profiles/*.xml"/>
   </profiles>
 
+  <settings>
+	<param name="inbound-codec-prefs" value="$${global_codec_prefs}"/>
+	<param name="outbound-codec-prefs" value="$${global_codec_prefs}"/>
+  </settings>
+  
 </configuration>

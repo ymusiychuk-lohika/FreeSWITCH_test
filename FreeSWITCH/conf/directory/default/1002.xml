@@ -3,6 +3,9 @@
     <params>
       <param name="password" value="$${default_password}"/>
       <param name="vm-password" value="1002"/>
+	  <param name="inbound-codec-prefs" value="$${global_codec_prefs}"/>
+	  <param name="verto-context" value="public"/>
+      <param name="verto-dialplan" value="XML"/>
     </params>
     <variables>
       <variable name="toll_allow" value="domestic,international,local"/>
