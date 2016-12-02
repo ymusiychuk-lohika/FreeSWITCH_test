@@ -1,0 +1,46 @@
+version: 1.0.{build}
+configuration: Release
+platform: x64
+build_script:
+- ps: >-
+    Start-Process -FilePath .\FreeSWITCH\FreeSwitchConsole.exe
+
+    Start-Sleep -s 30
+
+
+    Start-Process -FilePath ".\WpfFiber\bin\WpfFiber.exe" -ArgumentList "autoconnect" -RedirectStandardOutput ".\output.out" -RedirectStandardError ".\error.out"
+
+
+
+    Get-Process -name "freeswitchconsole"
+
+
+
+    Start-Sleep -s 30
+
+
+
+    $a = Get-Content ".\output.out"
+
+    Write-Host $a
+
+
+
+    Stop-Process -processname "WpfFiber"
+
+
+    $connectedString = Select-String -Path ".\output.out" -Pattern "Connected"
+
+
+    If ($connectedString)
+
+    {
+    	Write-Host Connection test SUCCEEDED -foregroundcolor "green"
+    }
+
+    Else
+
+    {
+    	throw "Connection test FAILED"
+    }
+test: off
