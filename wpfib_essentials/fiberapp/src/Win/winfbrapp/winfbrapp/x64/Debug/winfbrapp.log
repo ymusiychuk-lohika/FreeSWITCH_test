@@ -1,0 +1,53 @@
+﻿D:\Work\wpfib_libs\fiberapp\src\Win\winfbrapp\winfbrapp\winfbrapp.vcxproj(88,5): warning MSB4011: "C:\Users\ymusiychuk\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props" cannot be imported again. It was already imported at "D:\Work\wpfib_libs\fiberapp\src\Win\winfbrapp\winfbrapp\winfbrapp.vcxproj (85,5)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  stdafx.cpp
+  winUtils.cc
+d:\work\wpfib_libs\fiberapp\src\win\winUtils.h(10): fatal error C1083: Cannot open include file: 'talk/base/basictypes.h': No such file or directory
+  winuiwidget.cpp
+..\..\winuiwidget.cpp(1): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  winnetwork_monitor.cpp
+d:\work\wpfib_libs\fiberapp\src\win\winUtils.h(10): fatal error C1083: Cannot open include file: 'talk/base/basictypes.h': No such file or directory
+  WindowProcBase.cpp
+..\..\WindowProcBase.cpp(36): warning C4244: 'initializing' : conversion from 'UINT_PTR' to 'UINT', possible loss of data
+..\..\WindowProcBase.cpp(63): warning C4244: 'argument' : conversion from 'UINT_PTR' to 'const unsigned int', possible loss of data
+..\..\WindowProcBase.cpp(70): warning C4244: 'argument' : conversion from 'UINT_PTR' to 'UINT', possible loss of data
+  winbjnrenderer.cc
+D:\Work\wpfib_libs\fiberapp\src\bjnrenderer.h(4): fatal error C1083: Cannot open include file: 'common_video/interface/i420_video_frame.h': No such file or directory
+  winaudiodevconfig.cpp
+D:\Work\wpfib_libs\fiberapp\src\audiodevconfig.h(7): fatal error C1083: Cannot open include file: 'config_handler.h': No such file or directory
+  gdivideorenderer.cc
+d:\work\wpfib_libs\fiberapp\src\win\../bjnrenderer.h(4): fatal error C1083: Cannot open include file: 'common_video/interface/i420_video_frame.h': No such file or directory
+  d3d_render.cc
+..\..\d3d_render.cc(12): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  FiberAPI.cpp
+d:\work\wpfib_libs\fiberapp\src\win\FiberAPI.h(7): fatal error C1083: Cannot open include file: 'boost/asio.hpp': No such file or directory
+  DxVideoRenderer.cpp
+..\..\D3D\DxVideoRenderer.cpp(1): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  DxBjnRenderer.cpp
+..\..\D3D\DxBjnRenderer.cpp(1): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  d3dproxywidget.cpp
+..\..\D3D\d3dproxywidget.cpp(1): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  webrtc_voe_dev.cc
+d:\work\wpfib_libs\fiberapp\src\skinnysipmanager.h(4): fatal error C1083: Cannot open include file: 'sipmanagerbase.h': No such file or directory
+  webrtc_capture_dev.cpp
+d:\work\wpfib_libs\fiberapp\src\skinnysipmanager.h(4): fatal error C1083: Cannot open include file: 'sipmanagerbase.h': No such file or directory
+  uiwidget.cpp
+..\..\..\uiwidget.cpp(1): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  skinnysipmanager.cpp
+d:\work\wpfib_libs\fiberapp\src\skinnysipmanager.h(4): fatal error C1083: Cannot open include file: 'sipmanagerbase.h': No such file or directory
+  openlog.cpp
+d:\work\wpfib_libs\fiberapp\src\openlog.h(10): fatal error C1083: Cannot open include file: 'boost/make_shared.hpp': No such file or directory
+  callapi.cpp
+..\..\..\callapi.cpp(8): fatal error C1083: Cannot open include file: 'boost/asio.hpp': No such file or directory
+  bjn_render_dev.cpp
+d:\work\wpfib_libs\fiberapp\src\skinnysipmanager.h(4): fatal error C1083: Cannot open include file: 'sipmanagerbase.h': No such file or directory
+  Generating Code...
+  Compiling...
+  bjn_cpu_monitor.cc
+d:\work\wpfib_libs\fiberapp\src\bjn_cpu_monitor.h(4): fatal error C1083: Cannot open include file: 'talk/base/basictypes.h': No such file or directory
+  bjnhelpers.cpp
+..\..\..\bjnhelpers.cpp(3): fatal error C1083: Cannot open include file: 'talk/base/logging_libjingle.h': No such file or directory
+  bjndevices.cc
+d:\work\wpfib_libs\fiberapp\src\bjndevices.h(3): fatal error C1083: Cannot open include file: 'boost/filesystem.hpp': No such file or directory
+  audiodevconfig.cpp
+d:\work\wpfib_libs\fiberapp\src\audiodevconfig.h(7): fatal error C1083: Cannot open include file: 'config_handler.h': No such file or directory
+  Generating Code...

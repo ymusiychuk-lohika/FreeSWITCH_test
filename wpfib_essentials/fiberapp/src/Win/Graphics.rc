@@ -1,0 +1,4 @@
+#include "resource.h"
+
+IDC_BUTTONSPRITES	PNG		"graphics\\sprites.png"
+IDC_BUTTONSPRITES_JF3	PNG		"graphics\\sprites_JF3.png"

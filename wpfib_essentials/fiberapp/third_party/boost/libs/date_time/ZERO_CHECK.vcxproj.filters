@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\wpfib\fiberapp\third_party\boost\libs\date_time\CMakeFiles\72182ff7950a24f3d7424f8329f1fe89\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A48A5F0F-DDC0-37EA-8DB4-2614AC981F84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

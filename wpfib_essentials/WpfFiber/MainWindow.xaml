@@ -1,0 +1,107 @@
+﻿<Window x:Class="WpfFiber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Interop="clr-namespace:System.Windows.Interop;assembly=PresentationCore" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:UI="clr-namespace:WpfFiber"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=UI:MainWindowViewModel, IsDesignTimeCreatable=True}"
+        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#074595" Offset="0" />
+                    <GradientStop Color="#6589a4" Offset="1" />
+                </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Uniform">
+                <ImageBrush.ImageSource>
+                    <Interop:D3DImage x:Name="imgRemoteStream"/>
+                </ImageBrush.ImageSource>
+            </ImageBrush>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <DockPanel Grid.Row="0" Grid.Column="0">
+                <Label VerticalContentAlignment="Center" Width="70">Meeting ID</Label>
+                <TextBox Width="440" Height="52" FontSize="20px" HorizontalAlignment="Left" VerticalContentAlignment="Center" x:Name="tbMeetingId"
+                         Text="3001"/>
+            </DockPanel>
+            <DockPanel Grid.Row="1" Grid.Column="0">
+                <Label VerticalContentAlignment="Center" Width="70">Name</Label>
+                <TextBox Width="440" Height="52" FontSize="20px" HorizontalAlignment="Left" VerticalContentAlignment="Center" x:Name="tbName"
+                         Text="WPF PoC"/>
+            </DockPanel>
+
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Width="100" Height="50"
+                    x:Name="btnJoinMeeting"
+                    Content="Join meeting" Click="btnJoinMeeting_Click"
+                    IsEnabled="{Binding IsJoinMeetingEnabled, Mode=OneWay}"/>
+
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Width="100" Height="50"
+                    x:Name="btnDisconnect"
+                    Content="Disconnect" Click="btnDisconnect_Click"
+                    IsEnabled="{Binding IsDisconnectEnabled, Mode=OneWay}"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBlock Grid.Row="0" Text="Connecting..." FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"
+                       Visibility="Hidden" />
+
+
+            <Grid  VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="320" Height="240" MaxWidth="320" MaxHeight="240">
+                <Image Stretch="Uniform" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                    <Image.Source>
+                        <Interop:D3DImage x:Name="imgLocalStream" />
+                    </Image.Source>
+                </Image>
+
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Vertical">
+                    <TextBlock x:Name="tbLocalRenderFps" Text="Render Fps: 0" Foreground="Red" FontSize="20" />
+                    <TextBlock x:Name="tbLocalStreamFps" Text="Stream Fps: 0" Foreground="Red" FontSize="20" />
+                    <TextBlock x:Name="tbLocalResolution" Text="Cam Res: 0 x 0" Foreground="Red" FontSize="20" />
+                </StackPanel>
+            </Grid>
+
+
+            <TextBox Width="120" HorizontalAlignment="Right" Opacity="0.8" TextWrapping="Wrap" AcceptsReturn="True" x:Name="tbFiberMessageOutput" />
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Vertical">
+                <TextBlock x:Name="tbRemoteRenderFps" Text="Render Fps: 0" Foreground="Red" FontSize="20" />
+                <TextBlock x:Name="tbRemoteStreamFps" Text="Stream Fps: 0" Foreground="Red" FontSize="20" />
+                <TextBlock x:Name="tbRemoteResolution" Text="Stream Res: 0 x 0" Foreground="Red" FontSize="20" />
+            </StackPanel>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

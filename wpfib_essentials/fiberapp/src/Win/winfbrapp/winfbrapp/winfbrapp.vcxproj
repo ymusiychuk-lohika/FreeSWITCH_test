@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug GDI|x64">
+      <Configuration>Debug GDI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug GDI|x64">
+      <Configuration>Debug GDI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug GDI|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64579663-8D14-4816-BCA2-1ECAA3828AA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>winfbrapp</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <FiberDir>$(ProjectDir)..\..\..\..\fiber</FiberDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(WindowsSDK_LibraryPath_x64)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(WindowsSDK_LibraryPath_x86)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(WindowsSDK_LibraryPath_x86)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(WindowsSDK_LibraryPath_x86)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(WindowsSDK_LibraryPath_x64)\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib;$(FrameworkSDKDir)lib;$(WindowsSDK_LibraryPath_x64)\lib</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExcludePath>$(WindowsSDK_IncludePath);</ExcludePath>
+    <OutDir>$(OutDir)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;WIN32;_WINDLL;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;FB_WIN=1;FB_WIN_D3D;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/x64/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\celt.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\opus.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_common.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_float.lib;$(FiberDir)\webrtc\build\Debug\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Debug\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_avx2.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_sse41.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\common_video.lib;$(FiberDir)\webrtc\build\Debug\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Debug\lib\CNG.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_system.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_filesystem.lib;$(FiberDir)\webrtc\build\Debug\lib\G711.lib;$(FiberDir)\webrtc\build\Debug\lib\G722.lib;$(FiberDir)\webrtc\build\Debug\lib\iLBC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSAC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Debug\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Debug\lib\NetEq.lib;$(FiberDir)\webrtc\build\Debug\lib\media_file.lib;$(FiberDir)\webrtc\build\Debug\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Debug\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Debug\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Debug\lib\\NetEq4.lib;$(FiberDir)\webrtc\build\Debug\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_device.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Debug\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\ia32\ipps_l.lib;$(FiberDir)\ipp\win\lib\ia32\ippcore_l.lib;$(FiberDir)\webrtc\build\Debug\lib\libjingle.lib;$(FiberDir)\libyuv\build\Debug\lib\libyuv.lib;$(FiberDir)\libvpx\out\Win32\Debug\vpxmtd.lib;$(FiberDir)\ext_libs\win32\libcurl\Debug\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlibd.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\Debug\bwmgr.lib;$(FiberDir)\clientcore\libfiber\Debug\fiber.lib;$(FiberDir)\pjproject\\third_party\lib\libsrtp-i386-Win32-vc-Debug.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-Win32-vc-Debug.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\libeay32MTd.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\ssleay32MTd.lib;$(FiberDir)/libmfx/lib/Win32/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\Debug\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;WIN32;_WINDLL;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;FB_WIN=1;FB_WIN_D3D;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/win32/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\celt.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\opus.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_common.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_float.lib;$(FiberDir)\webrtc\build\Debug\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Debug\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_avx2.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing_sse41.lib;$(FiberDir)\webrtc\build\Debug\lib\video_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\common_video.lib;$(FiberDir)\webrtc\build\Debug\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Debug\lib\CNG.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_system.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_filesystem.lib;$(FiberDir)\webrtc\build\Debug\lib\G711.lib;$(FiberDir)\webrtc\build\Debug\lib\G722.lib;$(FiberDir)\webrtc\build\Debug\lib\iLBC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSAC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Debug\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Debug\lib\NetEq.lib;$(FiberDir)\webrtc\build\Debug\lib\media_file.lib;$(FiberDir)\webrtc\build\Debug\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Debug\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Debug\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Debug\lib\\NetEq4.lib;$(FiberDir)\webrtc\build\Debug\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_device.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Debug\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\ia32\ipps_l.lib;$(FiberDir)\ipp\win\lib\ia32\ippcore_l.lib;$(FiberDir)\webrtc\build\Debug\lib\libjingle.lib;$(FiberDir)\libyuv\build\Debug\lib\libyuv.lib;$(FiberDir)\libvpx\out\Win32\Debug\vpxmtd.lib;$(FiberDir)\ext_libs\win32\libcurl\Debug\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlibd.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\Debug\bwmgr.lib;$(FiberDir)\clientcore\libfiber\Debug\fiber.lib;$(FiberDir)\pjproject\\third_party\lib\libsrtp-i386-Win32-vc-Debug.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-Win32-vc-Debug.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\libeay32MTd.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\ssleay32MTd.lib;$(FiberDir)/libmfx/lib/Win32/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\Debug\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\third_party\boost_libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)WpfFiber\bin\$(Configuration)
+copy $(OutDir)..\bin\$(Configuration)\$(TargetName).pdb $(SolutionDir)WpfFiber\bin\$(Configuration)
+xcopy $(ProjectDir)config\fiberapp.config  $(SolutionDir)WpfFiber\bin\$(Configuration)\Resources\ /S /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;WIN32;_WINDLL;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;FB_WIN=1;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/win32/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\celt.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\opus.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_common.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_float.lib;$(FiberDir)\webrtc\build\Debug\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Debug\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Debug\lib\common_video.lib;$(FiberDir)\webrtc\build\Debug\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Debug\lib\CNG.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_system.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_filesystem.lib;$(FiberDir)\webrtc\build\Debug\lib\G711.lib;$(FiberDir)\webrtc\build\Debug\lib\G722.lib;$(FiberDir)\webrtc\build\Debug\lib\iLBC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSAC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Debug\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Debug\lib\NetEq.lib;$(FiberDir)\webrtc\build\Debug\lib\media_file.lib;$(FiberDir)\webrtc\build\Debug\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Debug\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Debug\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Debug\lib\\NetEq4.lib;$(FiberDir)\webrtc\build\Debug\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_device.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Debug\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\ia32\ipps_l.lib;$(FiberDir)\ipp\win\lib\ia32\ippcore_l.lib;$(FiberDir)\webrtc\build\Debug\lib\libjingle.lib;$(FiberDir)\libyuv\build\Debug\lib\libyuv.lib;$(FiberDir)\libvpx\out\Win32\Debug\vpxmtd.lib;$(FiberDir)\ext_libs\win32\libcurl\Debug\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlibd.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\Debug\bwmgr.lib;$(FiberDir)\clientcore\libfiber\Debug\fiber.lib;$(FiberDir)\pjproject\\third_party\lib\libsrtp-i386-Win32-vc-Debug.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-Win32-vc-Debug.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\libeay32MTd.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\ssleay32MTd.lib;$(FiberDir)/libmfx/lib/Win32/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\Debug\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;WIN32;_WINDLL;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;FB_WIN=1;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/win32/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\celt.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\opus.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_common.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\Win32\Debug\silk_float.lib;$(FiberDir)\webrtc\build\Debug\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Debug\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Debug\lib\common_video.lib;$(FiberDir)\webrtc\build\Debug\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Debug\lib\CNG.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_system.lib;$(FiberDir)/../third_party/boost_libs/Debug/boost_filesystem.lib;$(FiberDir)\webrtc\build\Debug\lib\G711.lib;$(FiberDir)\webrtc\build\Debug\lib\G722.lib;$(FiberDir)\webrtc\build\Debug\lib\iLBC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSAC.lib;$(FiberDir)\webrtc\build\Debug\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Debug\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Debug\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Debug\lib\NetEq.lib;$(FiberDir)\webrtc\build\Debug\lib\media_file.lib;$(FiberDir)\webrtc\build\Debug\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Debug\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Debug\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Debug\lib\\NetEq4.lib;$(FiberDir)\webrtc\build\Debug\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Debug\lib\audio_device.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio.lib;$(FiberDir)\webrtc\build\Debug\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Debug\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Debug\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\ia32\ipps_l.lib;$(FiberDir)\ipp\win\lib\ia32\ippcore_l.lib;$(FiberDir)\webrtc\build\Debug\lib\libjingle.lib;$(FiberDir)\libyuv\build\Debug\lib\libyuv.lib;$(FiberDir)\libvpx\out\Win32\Debug\vpxmtd.lib;$(FiberDir)\ext_libs\win32\libcurl\Debug\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlibd.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\Debug\bwmgr.lib;$(FiberDir)\clientcore\libfiber\Debug\fiber.lib;$(FiberDir)\pjproject\\third_party\lib\libsrtp-i386-Win32-vc-Debug.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-Win32-vc-Debug.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\libeay32MTd.lib;$(FiberDir)\ext_libs\Win32\openssl\lib\VC\static\ssleay32MTd.lib;$(FiberDir)/libmfx/lib/Win32/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\Debug\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;FB_WIN=1;FB_WIN_D3D;WIN32;NDEBUG;UNICODE;_UNICODE;_CONSOLE;_LIB;_WINDLL;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;XP_WIN=1;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;NO_FORCE_WEB_CAM_720p;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/win32/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\celt.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\opus.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_common.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_float.lib;$(FiberDir)\webrtc\build\Release\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Release\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Release\lib\common_video.lib;$(FiberDir)\webrtc\build\Release\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Release\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Release\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Release\lib\CNG.lib;$(FiberDir)\webrtc\build\Release\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Release\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/$(Platform)/$(Configuration)/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/$(Platform)/$(Configuration)/boost_system.lib;$(FiberDir)/../third_party/boost_libs/$(Platform)/$(Configuration)/boost_filesystem.lib;$(FiberDir)\webrtc\build\Release\lib\G711.lib;$(FiberDir)\webrtc\build\Release\lib\G722.lib;$(FiberDir)\webrtc\build\Release\lib\iLBC.lib;$(FiberDir)\webrtc\build\Release\lib\iSAC.lib;$(FiberDir)\webrtc\build\Release\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Release\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Release\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Release\lib\NetEq.lib;$(FiberDir)\webrtc\build\Release\lib\media_file.lib;$(FiberDir)\webrtc\build\Release\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Release\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Release\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Release\lib\NetEq4.lib;$(FiberDir)\webrtc\build\Release\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Release\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Release\lib\audio_device.lib;$(FiberDir)\webrtc\build\Release\lib\common_audio.lib;$(FiberDir)\webrtc\build\Release\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Release\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Release\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\intel64\ipps_l.lib;$(FiberDir)\ipp\win\lib\intel64\ippcore_l.lib;$(FiberDir)\webrtc\build\Release\lib\libjingle.lib;$(FiberDir)\libyuv\build\Release\lib\libyuv.lib;$(FiberDir)\libvpx\out\$(Platform)\Release\vpxmt.lib;$(FiberDir)\ext_libs\win32\\libcurl\Release\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlibd.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\$(PlatformTarget)\Release\bwmgr.lib;$(FiberDir)\clientcore\libfiber\RelWithDebInfo\fiber.lib;$(FiberDir)\pjproject\third_party\lib\libsrtp-i386-x64-vc-Release.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-x64-vc-Release.lib;$(FiberDir)\ext_libs\$(Platform)\openssl\lib\VC\static\libeay32MT.lib;$(FiberDir)\ext_libs\$(Platform)\openssl\lib\VC\static\ssleay32MT.lib;$(FiberDir)/libmfx/lib/$(Platform)/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\Release\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\third_party\boost_libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)WpfFiber\bin\$(Configuration)
+copy $(OutDir)..\bin\$(Configuration)\$(TargetName).pdb $(SolutionDir)WpfFiber\bin\$(Configuration)
+xcopy $(ProjectDir)config\fiberapp.config  $(SolutionDir)WpfFiber\bin\$(Configuration)\Resources\ /S /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB=1;FB_WIN=1;FB_WIN_D3D;WIN32;NDEBUG;UNICODE;_UNICODE;_CONSOLE;_LIB;_WINDLL;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;XP_WIN=1;_WINDOWS;BJN_SKINNY_CLIENT=1;ENABLE_GD;ENABLE_PCAP_READER;FORCE_WEB_CAM_720p;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(FiberDir)/clientcore/callmanager/callmanagerbase;$(FiberDir)/clientcore/callmanager/threadmanager/source;$(FiberDir)/webrtc/webrtc/voice_engine/include;$(FiberDir)/webrtc/webrtc/system_wrappers/interface;$(FiberDir)/webrtc/webrtc/video_engine/include;$(FiberDir)/webrtc/webrtc/modules/video_render/include;$(FiberDir)/webrtc/webrtc;$(FiberDir)/webrtc;$(FiberDir)/webrtc/webrtc/modules/interface;$(FiberDir)/pjproject/pjlib/include;$(FiberDir)/pjproject/pjlib-util/include;$(FiberDir)/pjproject/pjnath/include;$(FiberDir)/pjproject/pjmedia/include;$(FiberDir)/pjproject/pjsip/include;$(FiberDir)/clientcore/bjncodec/source;$(FiberDir)/libyuv/include;$(FiberDir)/bwmgr/src;$(FiberDir)/ipp/win/include;$(FiberDir)/curl/include;$(FiberDir)/libmfx/include;$(FiberDir)/ext_libs/win32/openssl/include;$(FiberDir)/../src/;$(FiberDir)/../third_party/boost/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>MSIMG32.LIB;version.lib;psapi.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\celt.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\opus.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_common.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_fixed.lib;$(FiberDir)\opus\win32\VS2010\x64\Release\silk_float.lib;$(FiberDir)\webrtc\build\Release\lib\directshow_baseclasses.lib;$(FiberDir)\webrtc\build\Release\lib\video_capture_module.lib;$(FiberDir)\webrtc\build\Release\lib\video_processing.lib;$(FiberDir)\webrtc\build\Release\lib\video_processing_avx2.lib;$(FiberDir)\webrtc\build\Release\lib\video_processing_sse2.lib;$(FiberDir)\webrtc\build\Release\lib\video_processing_sse41.lib;$(FiberDir)\webrtc\build\Release\lib\common_video.lib;$(FiberDir)\webrtc\build\Release\lib\system_wrappers.lib;$(FiberDir)\webrtc\build\Release\lib\webrtc_utility.lib;$(FiberDir)\webrtc\build\Release\lib\audio_coding_module.lib;$(FiberDir)\webrtc\build\Release\lib\CNG.lib;$(FiberDir)\webrtc\build\Release\lib\audio_processing.lib;$(FiberDir)\webrtc\build\Release\lib\audio_processing_sse2.lib;$(FiberDir)/../third_party/boost_libs/x64/Release/boost_thread.lib;$(FiberDir)/../third_party/boost_libs/x64/Release/boost_system.lib;$(FiberDir)/../third_party/boost_libs/x64/Release/boost_filesystem.lib;$(FiberDir)\webrtc\build\Release\lib\G711.lib;$(FiberDir)\webrtc\build\Release\lib\G722.lib;$(FiberDir)\webrtc\build\Release\lib\iLBC.lib;$(FiberDir)\webrtc\build\Release\lib\iSAC.lib;$(FiberDir)\webrtc\build\Release\lib\iSACFix.lib;$(FiberDir)\webrtc\build\Release\lib\webrtc_opus.lib;$(FiberDir)\webrtc\build\Release\lib\PCM16B.lib;$(FiberDir)\webrtc\build\Release\lib\NetEq.lib;$(FiberDir)\webrtc\build\Release\lib\media_file.lib;$(FiberDir)\webrtc\build\Release\lib\rtp_rtcp.lib;$(FiberDir)\webrtc\build\Release\lib\remote_bitrate_estimator.lib;$(FiberDir)\webrtc\build\Release\lib\paced_sender.lib;$(FiberDir)\webrtc\build\Release\lib\NetEq4.lib;$(FiberDir)\webrtc\build\Release\lib\voice_engine.lib;$(FiberDir)\webrtc\build\Release\lib\audio_conference_mixer.lib;$(FiberDir)\webrtc\build\Release\lib\audio_device.lib;$(FiberDir)\webrtc\build\Release\lib\common_audio.lib;$(FiberDir)\webrtc\build\Release\lib\common_audio_sse2.lib;$(FiberDir)\webrtc\build\Release\lib\audioproc_debug_proto.lib;$(FiberDir)\webrtc\build\Release\lib\protobuf_lite.lib;$(FiberDir)\ipp\win\lib\intel64\ipps_l.lib;$(FiberDir)\ipp\win\lib\intel64\ippcore_l.lib;$(FiberDir)\webrtc\build\Release\lib\libjingle.lib;$(FiberDir)\libyuv\build\Release\lib\libyuv.lib;$(FiberDir)\libvpx\out\x64\Release\vpxmt.lib;$(FiberDir)\curl\lib\Release\libcurl.lib;$(FiberDir)\ext_libs\win32\libzlib.lib;$(FiberDir)\ext_libs\win32\libbjnscr.lib;$(FiberDir)\bwmgr\x64\Release\bwmgr.lib;$(FiberDir)\clientcore\libfiber\RelWithDebInfo\fiber.lib;$(FiberDir)\pjproject\third_party\lib\libsrtp-i386-x64-vc-Release.lib;$(FiberDir)\pjproject\\lib\libpjproject-i386-x64-vc-Release.lib;$(FiberDir)\ext_libs\x64\openssl\lib\VC\static\libeay32MT.lib;$(FiberDir)\ext_libs\x64\openssl\lib\VC\static\ssleay32MT.lib;$(FiberDir)/libmfx/lib/x64/libmfx.lib;$(FiberDir)/libyuv\third_party\libjpeg_turbo\RelWithDebInfo\jpeg-static.lib;powrprof.lib;strmiids.lib;winmm.lib;advapi32.lib;crypt32.lib;Pdh.lib;secur32.lib;shell32.lib;shlwapi.lib;user32.lib;winhttp.lib;wininet.lib;ws2_32.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;Strmiids.lib;DelayImp.lib;setupapi.lib;Magnification.lib;Dwmapi.lib;dxva2.lib;d3d9.lib;iphlpapi.lib;gdi32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\..\bin\$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)..\bin\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\CMakeLists.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\clientcore\callmanager\callmanagerbase\config_handler.h" />
+    <ClInclude Include="..\..\..\audiodevconfig.h" />
+    <ClInclude Include="..\..\..\bjndevices.h" />
+    <ClInclude Include="..\..\..\bjnhelpers.h" />
+    <ClInclude Include="..\..\..\bjnrenderer.h" />
+    <ClInclude Include="..\..\..\bjnrendererfactory.h" />
+    <ClInclude Include="..\..\..\bjn_cpu_monitor.h" />
+    <ClInclude Include="..\..\..\bjn_render_dev.h" />
+    <ClInclude Include="..\..\..\callapi.h" />
+    <ClInclude Include="..\..\..\IDeviceController.h" />
+    <ClInclude Include="..\..\..\networkmonitorfactory.h" />
+    <ClInclude Include="..\..\..\network_monitor.h" />
+    <ClInclude Include="..\..\..\openlog.h" />
+    <ClInclude Include="..\..\..\skinnysipmanager.h" />
+    <ClInclude Include="..\..\..\uiwidget.h" />
+    <ClInclude Include="..\..\..\webrtc_capture_dev.h" />
+    <ClInclude Include="..\..\..\webrtc_voe_dev.h" />
+    <ClInclude Include="..\..\D3D\d3dproxywidget.h" />
+    <ClInclude Include="..\..\D3D\DxBjnRenderer.h" />
+    <ClInclude Include="..\..\D3D\DxVideoRenderer.h" />
+    <ClInclude Include="..\..\D3D\IDxProxyWidget.h" />
+    <ClInclude Include="..\..\d3d_render.h" />
+    <ClInclude Include="..\..\FiberAPI.h" />
+    <ClInclude Include="..\..\gdivideorenderer.h" />
+    <ClInclude Include="..\..\resource.h" />
+    <ClInclude Include="..\..\winaudiodevconfig.h" />
+    <ClInclude Include="..\..\winbjnrenderer.h" />
+    <ClInclude Include="..\..\WindowProcBase.h" />
+    <ClInclude Include="..\..\winnetwork_monitor.h" />
+    <ClInclude Include="..\..\winuiwidget.h" />
+    <ClInclude Include="..\..\winUtils.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\audiodevconfig.cpp" />
+    <ClCompile Include="..\..\..\bjndevices.cc" />
+    <ClCompile Include="..\..\..\bjnhelpers.cpp" />
+    <ClCompile Include="..\..\..\bjn_cpu_monitor.cc" />
+    <ClCompile Include="..\..\..\bjn_render_dev.cpp" />
+    <ClCompile Include="..\..\..\callapi.cpp" />
+    <ClCompile Include="..\..\..\openlog.cpp" />
+    <ClCompile Include="..\..\..\skinnysipmanager.cpp" />
+    <ClCompile Include="..\..\..\uiwidget.cpp" />
+    <ClCompile Include="..\..\..\webrtc_capture_dev.cpp" />
+    <ClCompile Include="..\..\..\webrtc_voe_dev.cc" />
+    <ClCompile Include="..\..\D3D\d3dproxywidget.cpp" />
+    <ClCompile Include="..\..\D3D\DxBjnRenderer.cpp" />
+    <ClCompile Include="..\..\D3D\DxVideoRenderer.cpp" />
+    <ClCompile Include="..\..\FiberAPI.cpp" />
+    <ClCompile Include="..\..\d3d_render.cc" />
+    <ClCompile Include="..\..\gdivideorenderer.cc" />
+    <ClCompile Include="..\..\winaudiodevconfig.cpp" />
+    <ClCompile Include="..\..\winbjnrenderer.cc" />
+    <ClCompile Include="..\..\WindowProcBase.cpp" />
+    <ClCompile Include="..\..\winnetwork_monitor.cpp" />
+    <ClCompile Include="..\..\winuiwidget.cpp" />
+    <ClCompile Include="..\..\winUtils.cc" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\webrtc_capture_dev.mm" />
+    <None Include="..\..\projectDef.cmake" />
+    <None Include="config\fiberapp.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\d3d9_effect.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug GDI|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+
+#define IDC_BUTTONSPRITES       99
+#define IDC_BUTTONSPRITES_JF3   100
+
