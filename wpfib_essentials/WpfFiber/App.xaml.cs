@@ -13,5 +13,14 @@ namespace WpfFiber
     /// </summary>
     public partial class App : Application
     {
+        public static bool AutoConnect = false;
+
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            if (e.Args.Any(s => s.ToUpper() == "AUTOCONNECT"))
+            {
+                AutoConnect = true;
+            }
+        }
     }
 }

@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Interop;
 using System.Windows.Media;
 using WpfFiber.Fiber;
@@ -138,6 +140,7 @@ namespace WpfFiber
                     _dataContext.SetState(FiberConnectionState.Disconnected);
                     break;
                 case FiberMessageShowRemote:
+                    Console.WriteLine("Connected");
                     _dataContext.SetState(FiberConnectionState.Connected);
                     break;
                 default:
@@ -226,8 +229,7 @@ namespace WpfFiber
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            int x = RenderCapability.Tier;
-            
+                     
         }
 
         private void btnJoinMeeting_Click(object sender, RoutedEventArgs e)
@@ -244,6 +246,15 @@ namespace WpfFiber
         private void Window_Closed(object sender, EventArgs e)
         {
             setFiberOff();
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            if (App.AutoConnect)
+            {
+                Console.WriteLine("AutoConnect");
+                btnJoinMeeting.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+            }
         }
     }
 }
