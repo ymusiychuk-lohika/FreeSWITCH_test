@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Net;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -112,10 +114,27 @@ namespace WpfFiber
                 _localRenderer.Init += LocalRenderer_Init;
                 _localRenderer.Update += LocalRenderer_Update;
 #endif
+
+                string hostString = "127.0.0.1";
+                
+                var host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (var ip in host.AddressList)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        hostString = ip.ToString();
+                        break;
+                    }
+                }
+
+                string connectionString = $"sip:{meetingId}@{hostString}:5060;transport=tcp";
+
+                Console.WriteLine($"Connecting to {connectionString}");
+                
                 FiberMessageCallback("Start call");
                 FiberAPI.Init(
                     name,
-                    $"sip:{meetingId}@172.23.86.16:5060;transport=tcp",
+                    connectionString,
                     new WindowInteropHelper(this).Handle
                     );
             }
